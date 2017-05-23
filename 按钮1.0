@@ -1,0 +1,36 @@
+# JAVA-
+共享代码
+import javax.swing.*;
+import java.awt.*;
+
+
+public class UI {
+	public class Button
+	{}
+
+public static void main(String[] args){
+	 /*以下是创建一个窗口及大小和标题*/
+	JFrame frame=new JFrame("学生成绩管理");
+	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	frame.setSize(700,500);	
+	/*以下是添加的面板以及面板里面的按钮*/
+	JPanel panel = new JPanel();	
+    BoxLayout boxLayout1 = new BoxLayout(panel, BoxLayout.Y_AXIS);
+    panel.setLayout(boxLayout1);
+    JButton button1 = new JButton("查询");
+    JButton button2 = new JButton("2号按钮");
+    JButton button3 = new JButton("3号按钮");
+    JButton button4 = new JButton("4号按钮");
+    JButton button5 = new JButton("5号按钮");
+    panel.add(button1);
+    panel.add(button2);
+    panel.add(button3);
+    panel.add(button4);
+    panel.add(button5);
+    
+    frame.add(panel);
+    frame.setVisible(true);	
+	
+}
+
+}
